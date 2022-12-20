@@ -14,7 +14,9 @@
   <body>
     <div class="topnav" id="myTopnav">
       <div class="logo">
-        <img src="./images/logo.png" alt="logo" class="logoimage" />
+        <a href="index.html"
+          ><img src="./images/logo.png" alt="logo" class="logoimage"
+        /></a>
       </div>
 
       <a href="contact.html">Contact Us</a>
@@ -32,9 +34,44 @@
       >
     </div>
 
-    <div style="padding-left: 16px">
-      <h2>contact page</h2>
-      <p>Resize the browser window to see how it works.</p>
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <p>Make A Appointment With Your Doctor</p>
+      <form action="" class="form">
+        <label for="fname">Full Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="fullname"
+          placeholder="Your name.."
+          required
+        />
+        <label for="number">Contact no:</label>
+        <input
+          type="text"
+          id="number"
+          name="number"
+          placeholder="Your number.."
+          required
+        />
+        <label for="lname">Your Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email.."
+          required
+        />
+
+        <label for="service">Services</label>
+        <select id="service" name="service">
+          <option value="X-ray">X-ray</option>
+          <option value="Regular Checkup">Regular Checkup</option>
+          <option value="Operation">Operation</option>
+        </select>
+
+        <input type="submit" value="Submit" />
+      </form>
     </div>
     <!-- footer -->
     <footer>
